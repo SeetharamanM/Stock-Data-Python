@@ -1,0 +1,57 @@
+{
+  "INDS00577": {
+    "entity_class": "STOCK",
+    "entity_basic": {
+      "ind_key": "INDS00577",
+      "name": "Infosys Ltd",
+      "short_name": "Infosys",
+      "display_name": "Infosys",
+      "symbol": "INFY",
+      "company_code": "2806",
+      "exchange": "NSE",
+      "market_cap": "LARGE CAP",
+      "market_cap_in_currency": 475469.51,
+      "is_active": true,
+      "is_intraday_active": true,
+      "has_fno": true,
+      "is_mtf": true,
+      "applicable_mtf_margin": 29.74,
+      "settlement_type": "Rolling",
+      "is_cas_eligible": true
+    },
+    "entity_stats": {
+      "live_price": 1142.5,
+      "day_change": -29.1,
+      "day_change_percentage": -2.48,
+      "prev_close": 1171.6,
+      "day_low": 1139,
+      "day_high": 1168,
+      "day_open": 1167.9,
+      "52week_high": 1728,
+      "52week_low": 980.4,
+      "upper_circuit": 1288.7,
+      "lower_circuit": 1054.5,
+      "volume": 6419425,
+      "price_updated_at_ist": "2026-11-09T12:43:47+05:30",
+      "price_mode": "live"
+    },
+    "analyst_forecast": {
+      "consensus": {
+        "num_analysts": 42,
+        "target_prc": 1160,
+        "sentiment": "HOLD",
+        "buy_per": 45.24,
+        "hold_per": 45.24,
+        "sell_per": 9.52
+      },
+      "target_price": {
+        "num_analysts": 42,
+        "low": 908,
+        "high": 1610,
+        "mean": 1160,
+        "current": 1171.6,
+        "upside_per": -0.99
+      }
+    }
+  }
+}

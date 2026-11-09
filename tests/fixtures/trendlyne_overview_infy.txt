@@ -1,0 +1,283 @@
+technicalData:
+  name | value | color | st | lt | unit | unique_name
+  Relative Strength Index | 58.6 | neutral | RSI is mid-range | RSI is 58.6, RSI below 30 is considered oversold and above 70 overbought | abs | rsi
+  Money Flow Index | 54.5 | neutral | MFI is mid-range | MFI is 54.5, MFI below 30 is considered oversold and above 70 overbought | abs | mfi
+  Beta 1Month | None | positive | Low volatility | Beta 1Month is 0.82 with Low volatility | None | beta_1M
+  SMA 20 | 1139.4 | positive | Price above SMA 1139.4 | Infosys Ltd. is trading above its 20 day SMA of 1139.4 | Rs | sma_20
+  SMA 50 | 1089.1 | positive | Price above SMA 1089.1 | Infosys Ltd. is trading above its 50 day SMA of 1089.1 | Rs | sma_50
+  SMA 200 | 1201.6 | negative | Price below SMA-200 | Infosys Ltd. is trading below its 200 day SMA of 1201.6 | Rs | sma_200
+  Pivot Point | 1174.6 |  | None | None | abs | pivot_point
+  Resistance R1 | 1177.5 |  | None | None | abs | first_resistance_r1
+  Support S1 | 1168.6 |  | None | None | abs | first_support_s1
+asmData:
+  url: 
+  lt: 
+  st: 
+  color: 
+  text: 
+summaryData:
+  ["Type","Holding","holdingId"], ["FII",27.44,263883046], ["Mutual Funds",22.96,263883028], ["Other Institutions",19.9,null], ["Public",15.59,165349559], ["Promoter",13.9,165349487]
+shBarChartData:
+  Promoter:
+    ["Quarter","Promoter Holding (%)",{"role":"annotation"},"Pledges as % of promoter shares (%)",{"role":"annotation"},"Locked as % of promoter shares (%)",{"role":"annotation"}], ["Sep 2024",14.4,"14.4 %",0.0,"0.0 %",0.0,"0.0 %"], ["Dec 2024",14.4,"14.4 %",0.0,"0.0 %",0.0,"0.0 %"], ["Mar 2025",14.6,"14.6 %",0.0,"0.0 %",0.0,"0.0 %"], ["Jun 2025",14.6,"14.6 %",0.0,"0.0 %",0.0,"0.0 %"], ["Sep 2025",14.3,"14.3 %",0.0,"0.0 %",0.0,"0.0 %"], ["Dec 2025",14.5,"14.5 %",0.0,"0.0 %",0.0,"0.0 %"], ["Mar 2026",14.4,"14.4 %",0.0,"0.0 %",0.0,"0.0 %"], ["Jun 2026",13.8,"13.8 %",0.0,"0.0 %",0.0,"0.0 %"], ["Sep 2026",13.9,"13.9 %",0.0,"0.0 %",0.0,"0.0 %"]
+  Institutional:
+    ["Quarter","Holding (%)",{"role":"annotation"}], ["Sep 2024",71.4,"71.4 %"], ["Dec 2024",71.7,"71.7 %"], ["Mar 2025",71.4,"71.4 %"], ["Jun 2025",71.5,"71.5 %"], ["Sep 2025",71.7,"71.7 %"], ["Dec 2025",71.6,"71.6 %"], ["Mar 2026",71.8,"71.8 %"], ["Jun 2026",70.1,"70.1 %"], ["Sep 2026",70.3,"70.3 %"]
+  FII:
+    ["Quarter","Holding (%)",{"role":"annotation"}], ["Sep 2024",33.3,"33.3 %"], ["Dec 2024",33.3,"33.3 %"], ["Mar 2025",32.9,"32.9 %"], ["Jun 2025",31.9,"31.9 %"], ["Sep 2025",30.1,"30.1 %"], ["Dec 2025",30.3,"30.3 %"], ["Mar 2026",28.4,"28.4 %"], ["Jun 2026",27.1,"27.1 %"], ["Sep 2026",27.4,"27.4 %"]
+  MF:
+    ["Quarter","Holding (%)",{"role":"annotation"}], ["Sep 2024",19.7,"19.7 %"], ["Dec 2024",20.0,"20.0 %"], ["Mar 2025",20.4,"20.4 %"], ["Jun 2025",20.9,"20.9 %"], ["Sep 2025",22.7,"22.7 %"], ["Dec 2025",22.1,"22.1 %"], ["Mar 2026",23.5,"23.5 %"], ["Jun 2026",23.0,"23.0 %"], ["Sep 2026",23.0,"23.0 %"]
+  DII:
+    ["Quarter","Holding (%)",{"role":"annotation"}], ["Sep 2024",38.1,"38.1 %"], ["Dec 2024",38.4,"38.4 %"], ["Mar 2025",38.5,"38.5 %"], ["Jun 2025",39.6,"39.6 %"], ["Sep 2025",41.6,"41.6 %"], ["Dec 2025",41.3,"41.3 %"], ["Mar 2026",43.4,"43.4 %"], ["Jun 2026",43.0,"43.0 %"], ["Sep 2026",42.9,"42.9 %"]
+  Public:
+    ["Quarter","Holding (%)",{"role":"annotation"}], ["Sep 2024",13.9,"13.9 %"], ["Dec 2024",13.6,"13.6 %"], ["Mar 2025",13.7,"13.7 %"], ["Jun 2025",13.6,"13.6 %"], ["Sep 2025",13.7,"13.7 %"], ["Dec 2025",13.7,"13.7 %"], ["Mar 2026",13.5,"13.5 %"], ["Jun 2026",15.9,"15.9 %"], ["Sep 2026",15.6,"15.6 %"]
+  Others:
+    ["Quarter","Holding (%)",{"role":"annotation"}], ["Sep 2024",0.3,"0.3 %"], ["Dec 2024",0.3,"0.3 %"], ["Mar 2025",0.3,"0.3 %"], ["Jun 2025",0.3,"0.3 %"], ["Sep 2025",0.3,"0.3 %"], ["Dec 2025",0.2,"0.2 %"], ["Mar 2026",0.3,"0.3 %"], ["Jun 2026",0.2,"0.2 %"], ["Sep 2026",0.2,"0.2 %"]
+fundamentalData:
+  name | value | color | st | lt | unit | title | unique_name
+  Market Cap | 475469.5 | positive | Market Runner Up | Market Capitalization is market runner up in its industry | Cr. | Market Capitalization | MCAP_Q
+  Price to Earnings | 15.5 | neutral | Below industry Median | PE TTM is below industry Median |  | PE TTM | PE_TTM
+  Price to Book Value Adjusted | 4.7 | negative | Above industry Median | Price to Book is above industry Median |  | Price to Book | PBV_A
+  Dividend Yield | 4.4 | positive | High in industry | Dividend yield 1yr % is high in its industry |  | Dividend yield 1yr % | DIVIDEND_YIELD_1_YR
+  PE to Growth | 1.7 | negative | High in industry | PEG TTM is high in its industry |  | PEG TTM | PEG_TTM
+  Op Revenue TTM | 189336.0 | positive | 11.7% incr over last year | Last year Operating Revenue TTM was 169,458 Cr. | Cr | Operating Revenue TTM | SR_TTM
+  Net Profit TTM | 30747.0 | positive | 9.3% incr over last year | Last year Net profit TTM was 28,124 Cr. | Cr | Net profit TTM | NP_TTM
+  Cash From Operating Activity | 33986.0 | neutral | 5% decr over last year | Last year Cash from Operating Activity Annual was 35,694 Cr. | Cr | Cash from Operating Activity Annual | CFO_A
+  Return on Equity % | 31.7 | positive | 13.7% incr over last year | Last year ROE Annual % was 27.87 |  | ROE Annual % | ROE_A
+SWOTData:
+  tableHeaders:
+    unique_name | type | name
+    screen_id | number | ScreenPk
+    title | string | title
+    description | string | description
+    insight | string | insight
+    color | string | color
+  tableData:
+    strengths:
+      [36275,"Companies with no Debt","Companies with no Debt","","positive"], [4805,"Benjamin Graham Value Screen","Stocks which have market cap over Rs. 500 crore, and have a Graham Ratio greater than 1 (Graham Ratio is the Graham Number/Current Price. Greater than 1 is a healthy ratio). This screener is a dynamic screener that changes based on Benjamin Graham value investing principles. Stocks enter and exit this screener on an ongoing basis. To follow this screener, set a screener alert. For this screener, we recommend a monthly or weekly alert. This is a longer-term screener.","202.28% returns for NIFTY500 over 6.421917808219178 years","positive"], [37279,"Stocks in Buy Zone with High Momentum Score Last Month","","","positive"], [17183,"Companies with current TTM PE Ratio less than 3 Year, 5 Year and 10 Year PE","Stock screener showing companies with PE values less than average three year, five year and ten year PE values","","positive"], [11122,"Newly Affordable Stocks with Good Financials and Durability (subscription)","Stocks that have improved in valuations after sharp falls during the quarter. This screener identifies stocks that fell by at least 10% in price over the quarter, but have good financials. Investors however should keep in mind that these share prices may be reacting to analyst calls, regulatory changes, and the overall market environment. To get notified of changes to the screener, set an alert.","","positive"], [48091,"Upcoming results with Rising Delivery Volumes","Stocks which are seeing rising delivery volumes before results","","positive"], [9826,"Mid-range Performer (DVM)","Mid-range Performer stocks are those with high durability, but midrange valuation scores and midrange momentum. These stocks are considered financially durable, but in the middle of the road in terms of how much momentum the stock has in the market, and how expensive it is.","795.74% returns for NIFTY500 over 10.183561643835617 years","positive"], [178590,"Relative Outperformance versus Industry over 1 Month","Stocks whose month change in share price outperformed the industry","","positive"], [218498,"Annual Profit Growth higher than Sector Profit Growth","Stocks whose net profit growth annually are higher than the sector","","positive"], [258198,"PEG lower than Industry PEG","Stocks whose PEG is lower than Industry PEG (Price to Earnings Growth)","","positive"], [11113,"Stocks gaining versus previous close, open price and RSI","Identifies stocks that are seeing an upward trend versus previous close and open price","","positive"], [258180,"Dividend yield greater than sector dividend yield","Stocks whose dividend yield is greater than their sector","","positive"], [6158,"High Momentum Scores (Technical Scores greater than 50)","Stocks with High Trendlye Momentum score. Momentum scores are calculated on basis of technical indicators like SMA, RSI, MFI, MACD, ROC, ATR, ADX and other technical values.","319.54% returns for NIFTY500 over 5.079452054794521 years","positive"], [385659,"Relative Outperformance versus Industry over 1 Month","Stocks whose month change in share price outperformed the industry","","positive"], [36280,"Increasing Revenue every Quarter for the past 4 Quarters","Stocks where revenue is growing in every quarter since the past 4 quarters.","","positive"], [36319,"Annual Net Profits improving for last 2 years","Annual net profit Improving for last 2 years","","positive"], [36321,"Companies with Zero Promoter Pledge","Companies with Zero Promoter Pledge","","positive"], [36314,"RSI indicating price strength","","","positive"]
+    weaknesses:
+      [24731,"Negative Breakdown Third Support (LTP < S3)","Negative Breakdown third support","","negative"], [36317,"Declining Net Cash Flow : Companies not able to generate net cash","Declining net cash flows","","negative"], [23578,"Top Losers","Top Losers Stocks","","negative"], [196862,"Stocks Underperforming their Industry Price Change in the Quarter","Stocks that have underperformed their industry in Quarter Share Price Change","","negative"]
+    opportunities:
+      [20014,"Broker price or reco upgrades in last month","Stocks that received broker price/reco upgrades in past one month","-26.20% returns for NIFTY500 over 0.27123287671232876 years","neutral"], [18916,"Brokers upgraded recommendation or target price in the past three months","Stocks where brokers upgraded the recommendation, or the target price within the past three months","8.39% returns for NIFTY500 over 0.3041095890410959 years","neutral"], [14807,"Broker Upgrades: Stocks where brokers upgraded recommendation or price target in the past one month","Stocks where brokers have upgraded either recommendation or price in the last one month","","neutral"], [15318,"Highest FII stock holdings","See stocks with highest FII holding","32.79% returns for over 6.421917808219178 years","neutral"], [36285,"FII / FPI or Institutions increasing their shareholding","FII / FPI or Institutions increasing their shareholding","","neutral"], [23587,"Broker price or reco upgrades in last month","Stocks that received broker price/reco upgrades in past one month","","neutral"]
+    threats:
+      [12094,"Recent Broker Downgrades in Reco or Target Price","Identifies stocks that are seeing recent recommendation or target downgrades from brokerage analysts","","negative"], [15075,"Broker downgrades in price or recommendation in the past one month","Stocks which have seen brokers downgrade the target price or recommendation, within the past one month","","negative"], [15452,"MFs decreased their shareholding last quarter","See all stocks where MFs decreased their stake last quarter. MFs decreasing their shareholding in a stock is considered negative for the stock.","190.00% returns for over 6.421917808219178 years","negative"]
+    others:
+      [9844,"Rising Delivery Percentage Compared to Prev Day","Stocks which are seeing rising delivery percentage compared to previous day","","neutral"], [18569,"Indian stocks that could be impacted by Brexit (Britain leaving the EU)","Stocks in the IT, Pharma and Auto sectors are more susceptible than others to the disruption of Britain leaving the EU. The Indian stocks identified here have customers and supply chains in the Britain-EU market, which could get affected by Britain breaking away.","","neutral"], [3055,"Average Affordability - Stocks with Medium Trendlyne Valuation Score versus Benchmarks","This screener compares the performance of medium Valuation Score stocks to benchmarks. As seen in the screener, stocks with medium Valuation Scores still outperform indices.","211.82% returns for NIFTY500 over 4.504109589041096 years","neutral"], [3058,"Average Bullish Trend - Stocks with Medium Trendlyne Momentum Score versus Benchmarks","This screener compares the performance of medium Technical Momentum Score stocks to benchmarks. As seen in the screener, stocks with medium Momentum Scores still outperform indices.","181.71% returns for NIFTY500 over 4.504109589041096 years","neutral"], [36307,"Decline in Quarterly Net Profit with falling Profit Margin (YoY)","Falling profit YoY with falling profit margin","","neutral"]
+  resultType: consolidated
+investmentChecklist:
+  insight: High rank - 65.2% pass in checklist
+  insightColor: positive
+  positivesNum: 15
+  total: 23
+  checklistP: 65.21739130434783
+  webviewUrl: https://trendlyne.com/equity/webview/investment/checklist/630/INFY/infosys-ltd/trendlyne-checklist/
+forcasterData:
+  EPS:
+    QUARTER:
+      ACTUAL | AVG | HIGH | LOW | MEDIAN | NUMBER_OF_ANALYSTS | NUMBER_OF_ANALYSTS_MONTH | qtr_end_date | resulttype | periodtype | stock_qtr_end_date | consolidated | restatementTypeId | SURPRISES | consolidated_type | restatement_type | is_past | is_current | CURRENT | GROWTH
+      20.98 | 18.42 | 19.25 | 18.0 | 18.4 | 18.0 | 18.0 | 2026-03-31 | 1 | Q4FY26 | 2026-09-30 | 30 | 60 | 13.9 | Consolidated | Latest on Capital IQ | True | False | None | 0
+      19.17 | 19.07 | 19.9 | 17.5 | 19.2 | 11.0 | 11.0 | 2026-06-30 | 1 | Q1FY27 | 2026-09-30 | 30 | 60 | 0.52 | Consolidated | Latest on Capital IQ | True | False | None | -10.02
+      19.3 | 19.54 | 20.03 | 18.9 | 19.6 | 18.0 | 18.0 | 2026-09-30 | 1 | Q2FY27 | 2026-09-30 | 30 | 60 | -1.23 | Consolidated | Latest on Capital IQ | True | True | None | 1.89
+      18.3 | 18.3 | 19.5 | 16.1 | 18.72 | 8.0 | 5.0 | 2026-12-31 | 1 | Q3FY27 | 2026-09-30 | 30 | 60 | 0.0 | Consolidated | Latest on Capital IQ | False | False | 19.3 | -5.46
+      18.85 | 18.85 | 21.0 | 18.05 | 18.6 | 7.0 | 5.0 | 2027-03-31 | 1 | Q4FY27 | 2026-09-30 | 30 | 60 | 0.0 | Consolidated | Latest on Capital IQ | False | False | 19.3 | 2.92
+    ANNUAL:
+      ACTUAL | AVG | HIGH | LOW | MEDIAN | NUMBER_OF_ANALYSTS | NUMBER_OF_ANALYSTS_MONTH | qtr_end_date | resulttype | periodtype | stock_qtr_end_date | consolidated | restatementTypeId | SURPRISES | consolidated_type | restatement_type | is_past | is_current | CURRENT | GROWTH
+      63.29 | 59.09 | 60.1 | 58.0 | 59.01 | 36.0 | 36.0 | 2024-03-31 | 2 | FY24 | 2026-09-30 | 30 | 60 | 7.11 | Consolidated | Latest on Capital IQ | True | False | None | 0
+      64.34 | 63.72 | 65.2 | 62.8 | 63.7 | 36.0 | 36.0 | 2025-03-31 | 2 | FY25 | 2026-09-30 | 30 | 60 | 0.97 | Consolidated | Latest on Capital IQ | True | False | None | 0.67
+      71.46 | 70.11 | 73.2 | 68.0 | 70.0 | 31.0 | 31.0 | 2026-03-31 | 2 | FY26 | 2026-09-30 | 30 | 60 | 1.93 | Consolidated | Latest on Capital IQ | True | True | None | 8.23
+      76.19 | 76.19 | 78.5 | 73.8 | 76.3 | 37.0 | 33.0 | 2027-03-31 | 2 | FY27 | 2026-09-30 | 30 | 60 | 0.0 | Consolidated | Latest on Capital IQ | False | False | 71.46 | 6.21
+      79.74 | 79.74 | 86.6 | 74.2 | 79.37 | 38.0 | 34.0 | 2028-03-31 | 2 | FY28 | 2026-09-30 | 30 | 60 | 0.0 | Consolidated | Latest on Capital IQ | False | False | 71.46 | 4.45
+    params_name: EPS
+    INSIGHT:
+      ANNUAL:
+        performanceInsight:
+          st: Infosys's EPS was higher than average estimate 3 times in past 3 years
+          lt: Infosys's EPS was higher than average estimate 3 times in past 3 years
+          value: None
+          color: POSITIVE
+        forwardInsight:
+          st: EPS is expected to grow by 6.6% in FY27
+          lt: EPS is expected to grow by 6.6% in FY27
+          value: None
+          color: POSITIVE
+      QUARTER:
+        performanceInsight:
+          st: Infosys's EPS was higher than average estimate 2 times in past 3 quarters
+          lt: Infosys's EPS was higher than average estimate 2 times in past 3 quarters
+          value: None
+          color: POSITIVE
+        forwardInsight:
+          st: EPS is expected to reduce by 5.2% in Q3FY27
+          lt: EPS is expected to reduce by 5.2% in Q3FY27
+          value: None
+          color: NEGATIVE
+  RECOMMENDATION:
+    STRONG_SELL | SELL | HOLD | BUY | STRONG_BUY | AVG_RECO_TEXT | NO_OPINION | RECO_VALUE | asofdate | consolidated | restatementTypeId | NUMBER_OF_ANALYSTS | consolidated_type | restatement_type | RECO_TEXT | INSIGHT
+    {"value":1.0,"class":"d_sell"} | {"value":1.0,"class":"sell"} | {"value":12.0,"class":"hold"} | {"value":4.0,"class":"buy"} | {"value":22.0,"class":"d_buy"} | Outperform | 1.0 | 1.88 | 2026-06-29 | 30 | 60 | 40.0 | Consolidated | Latest on Capital IQ | {"value":"BUY","class":"buy"} | {"st":"The consensus recommendation from 40 analysts for Infosys is BUY","lt":"The consensus recommendation from 40 analysts for Infosys is BUY"}
+    {"value":1.0,"class":"d_sell"} | {"value":3.0,"class":"sell"} | {"value":17.0,"class":"hold"} | {"value":10.0,"class":"buy"} | {"value":11.0,"class":"d_buy"} | Outperform | 1.0 | 2.36 | 2026-11-07 | 30 | 60 | 42.0 | Consolidated | Latest on Capital IQ | {"value":"BUY","class":"buy"} | {"st":"The consensus recommendation from 42 analysts for Infosys is BUY","lt":"The consensus recommendation from 42 analysts for Infosys is BUY"}
+  TARGET_PRICE:
+    QUARTER:
+      AVG | MEDIAN | HIGH | LOW | NUMBER_OF_ANALYSTS | qtr_end_date | resulttype | periodtype | stock_qtr_end_date | consolidated | restatementTypeId | consolidated_type | restatement_type | is_past | is_current
+      1200.1 | 1200.0 | 1627.0 | 990.0 | 42.0 | 2026-09-30 | 1 | Q2FY27 | 2026-09-30 | 30 | 60 | Consolidated | Latest on Capital IQ | True | True
+    params_name: Share price target
+    TARGET_PRICE_FORECAST:
+      ANNUAL:
+        AVG: 1200.1
+        MEDIAN: 1200.0
+        HIGH: 1627.0
+        LOW: 990.0
+        NUMBER_OF_ANALYSTS: 42.0
+        qtr_end_date: 2027-03-31
+        periodtype: FY27
+        is_past: False
+        is_current: False
+ce_available: True
+forecasterurl: https://trendlyne.com/mapp/webview/forecaster/consensus-estimates/630/INFY/infosys-ltd/
+hasConstituents: False
+report_available: True
+stockHeaders:
+  name | type | unique_name | unit
+  Stock Name | string | get_full_name | 
+  Stock ID | number | stock_id | 
+  Page type | string | page_type | 
+  NSE Symbol | string | NSEcode | 
+  BSEcode | string | BSEcode | 
+  ISIN | string | ISIN | 
+  Durability Score | number | d_value | 
+  Valuation Score | number | v_value | 
+  Momentum Score | number | m_value | 
+  D color | string | d_color | 
+  V color | string | v_color | 
+  M color | string | m_color | 
+  Durability Insight | string | d_insight | 
+  Valuation Insight | string | v_insight | 
+  Momentum Insight | string | m_insight | 
+  Stock Classification Text | string | DVM_classification_text | 
+  Stock Classification Color | string | DVM_classification_color | 
+  Industry Name | string | industry_name | 
+  Current Price | unit | current_p | 
+  Updated Date Time | datetime | updated | 
+  Default Exchange | string | default_exchange | 
+  Day Change | number | day_change | 
+  Day Change Percentage | percentage | day_changeP | %
+  Week Change | number | week_change | 
+  Week Change Percentage | percentage | week_changeP | %
+  Month Change | number | month_change | 
+  Month Change Percentage | percentage | month_changeP | %
+  Year Change | number | year_change | 
+  Year Change Percentage | percentage | year_changeP | %
+  Volume Day | number | vol_day | 
+  Price Insight | text | price_insight | 
+  Price Insight Color | text | price_insight_color | 
+lastUpdated: 09 Nov, 2026 12:41 PM (IST)
+stockData:
+  Infosys Ltd., 630, Equity, INFY, 500209, INE009A01021, 70.0, 43.83333, 54.4, positive, neutral, neutral, High Financial Strength, Mid Valuation, Technically Neutral, Mid-range Performer, positive, IT Consulting & Software, 1171.6, 2026-11-09T07:11:56+00:00, NSE, -9.8, -0.83, -13.4, -1.13, 174.6, 17.51, -305.2, -20.67, 6592505.0, 32.20% Fall from 52W High, negative
+advanceChartUrl: https://trendlyne.com/mapp/v1/stock/webview/advance-chart/630/
+tradingViewChartUrl: https://trendlyne.com/mapp/webview/tv-chart-loader/630/INFY/
+manualInsight:
+  shorttext: Infosys Limited (INFY) is a global provider of next-generation digital serv ...
+  url: https://trendlyne.com/equity/about/630/INFY/infosys-ltd/
+hasFundamentalPage: True
+datav2:
+  changeP_2yr: -35.97639279761742
+  twoYearChange: -658.35
+  changeP_3yr: -15.772825305535585
+  threeYearChange: -219.4
+  changeP_5yr: -32.56978417266187
+  fiveYearChange: -565.9
+  changeP_10yr: 138.46936698554853
+  tenYearChange: 680.3
+  dayLow: 1171.61
+  dayHigh: 1180.5
+  weekLow: 1113.1
+  weekHigh: 1198.8
+  monthLow: 1007.3
+  monthHigh: 1198.8
+  yearLow: 980.4
+  yearHigh: 1728.0
+  twoYearLwo: None
+  twoYearHigh: None
+  threeYearLow: 980.4
+  threeYearHigh: 2006.45
+  fiveYearLow: 980.4
+  fiveYearHigh: 2006.45
+  tenYearLow: 430.0
+  tenYearHigh: 2006.45
+brokerSummaryData:
+  broker_average_upside: 11.41
+  broker_agg_rating: 3.92
+  broker_avg_target: 1305.23
+  broker_covered: 13
+  broker_report_1Y: 40
+  broker_recodown_1M: 1
+  broker_recodown_3M: 1
+  broker_recodown_6M: 2
+  broker_recoup_1M: 0
+  broker_recoup_3M: 0
+  broker_recoup_6M: 0
+  broker_targetdown_1M: 2
+  broker_targetdown_3M: 2
+  broker_targetdown_6M: 8
+  broker_targetup_1M: 3
+  broker_targetup_3M: 3
+  broker_targetup_6M: 4
+  broker_buy_1Y: 6.0
+  broker_sell_1Y: 1.0
+  broker_hold_1Y: 6.0
+  broker_last_update: 2026-10-25T18:30:00+00:00
+  broker_low_1Y: 1030.0
+  broker_high_1Y: 2032.0
+corporateInfo:
+  companyInfo: Infosys Limited (INFY) is a global provider of next-generation digital services and consulting, headquartered in Bengaluru, India. Founded in 1981, the company pioneered the Global Delivery Model and was the first Indian IT company to list on NASDAQ....
+  isAvailable: True
+sectorIndustryData:
+  sectorName: Software & Services
+  sectorPk: 1
+  industryName: IT Consulting & Software
+  industryPk: 70
+buySellData:
+  buy_sell_value: 11.53
+  insight: Strong Buy Zone
+  color: positive
+  buy_sell_webview_url: https://trendlyne.com/mapp/webview/tools/buy-sell-zone/630/INFY/infosys-ltd/
+dvmHistoryUrls:
+  durability: https://trendlyne.com/mapp/webview/dvm-param-chart-loader/630/TL_DURABILITY_METRIC/
+  valuation: https://trendlyne.com/mapp/webview/dvm-param-chart-loader/630/TL_VALUATION_METRIC/
+  momentum: https://trendlyne.com/mapp/webview/dvm-param-chart-loader/630/abs_score/
+pe_valuation_data:
+  title: PE Valuation Check
+  PEchartData:
+    heading: Right Now
+    title: Current PE vs 5 year Average PE
+    attr1_heading: Fair price
+    attr1_title: Based on 5Yr Average PE
+    attr1_val: 1839.0
+    attr2_heading: Upside
+    attr2_title: Current PE versus 5Yr Average PE
+    attr2_val: 57.0
+    st: Undervalued
+  ForwardPEchartData:
+    heading: 1 Year Forward
+    title: 5 Yr Average PE & Projected 1Yr Forward EPS*
+    attr1_heading: Fair price
+    attr1_title: Based on 1Yr Forward EPS
+    attr1_val: 1853.7
+    attr2_heading: Upside
+    attr2_title: 5 Yr Average PE & 1Yr Forward EPS
+    attr2_val: 58.2
+    st: Undervalued
+  PEInsight: Infosys is undervalued at both current PE and future earnings estimates.
+  PEInsightColor: neutral
+  pe_image_map:
+    Undervalued:
+      valueClass: positive
+      meterType: https://cdn-static.trendlyne.com/static/img/buy-sell/undervalued-indicator.webp
+    Overvalued:
+      valueClass: negative
+      meterType: https://cdn-static.trendlyne.com/static/img/buy-sell/overvalued-indicator.webp
+    Fairly Valued:
+      valueClass: neutral
+      meterType: https://cdn-static.trendlyne.com/static/img/buy-sell/fairlyvalued-indicator.webp
+chipsData:
+  key | color | title
+  DealWins | neutral | Deal Wins
+  AttritionRate | neutral | Attrition Rate

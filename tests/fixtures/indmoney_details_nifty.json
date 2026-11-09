@@ -1,0 +1,32 @@
+{
+  "INDI00012": {
+    "entity_class": "INDEX",
+    "entity_basic": {
+      "ind_key": "INDI00012",
+      "name": "NIFTY 50",
+      "short_name": "NIFTY 50",
+      "display_name": "NIFTY 50",
+      "symbol": "NIFTY",
+      "company_code": "20559",
+      "exchange": "NSE",
+      "market_cap_in_currency": 20066550.86,
+      "is_active": true,
+      "has_fno": true
+    },
+    "entity_stats": {
+      "live_price": 24904.15,
+      "day_change": -82.25,
+      "day_change_percentage": -0.33,
+      "prev_close": 24986.4,
+      "day_low": 24838.75,
+      "day_high": 25084.05,
+      "day_open": 25076.4,
+      "52week_high": 26373.2,
+      "52week_low": 22179.9,
+      "upper_circuit": 0,
+      "lower_circuit": 0,
+      "price_updated_at_ist": "2026-11-09T12:49:26+05:30",
+      "price_mode": "live"
+    }
+  }
+}

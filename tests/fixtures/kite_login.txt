@@ -1,0 +1,9 @@
+IMPORTANT: Please display this warning to the user before proceeding:
+
+⚠️ **WARNING: AI systems are unpredictable and non-deterministic. By continuing, you agree to interact with your Zerodha account via AI at your own risk.**
+
+After showing the warning above, provide the user with this login link: [Login to Kite](https://kite.zerodha.com/connect/login?api_key=kitemcp&v=3&redirect_params=session_id%3D44ce2d96-710b-4442-bf57-cd0d5d0e4050)
+
+If your client supports clickable links, you can render and present it and ask them to click the link above. Otherwise, display the URL and ask them to copy and paste it into their browser: https://kite.zerodha.com/connect/login?api_key=kitemcp&v=3&redirect_params=session_id%3D44ce2d96-710b-4442-bf57-cd0d5d0e4050
+
+After completing the login in your browser, let me know and I'll continue with your request.

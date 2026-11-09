@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stock Data</title>
+  <meta name="description" content="Indian stock prices, charts and research from INDmoney, Kite and Trendlyne.">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232563eb'/%3E%3Cpath d='M7 21l6-6 4 4 8-9' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <script src="https://cdn.jsdelivr.net/npm/plotly.js-finance-dist-min@3.7.0/plotly-finance.min.js"
+          integrity="sha384-x1MPRSZmQjLsWV/e/Q4i2h/WlsrOBPrL21wv2l3k2mj9GjDbKG5raQjqh0DjOyQM"
+          crossorigin="anonymous" defer></script>
+  <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Stock Data home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7"/><path d="M7 21l6-6 4 4 8-9"/></svg>
+      <span>Stock Data</span>
+    </a>
+    <p class="tagline">INDmoney · Kite · Trendlyne</p>
+  </header>
+
+  <main class="page">
+    <section class="card sources" aria-labelledby="sources-title">
+      <h2 id="sources-title" class="visually-hidden">Data sources</h2>
+      <ul id="sources" class="source-list"></ul>
+    </section>
+
+    <form id="search-form" class="search" role="search" autocomplete="off">
+      <label for="symbol" class="visually-hidden">Stock name or NSE symbol</label>
+      <input id="symbol" name="symbol" list="suggestions" placeholder="Search a company or NSE symbol, e.g. Infosys or INFY" spellcheck="false" required>
+      <datalist id="suggestions"></datalist>
+      <button type="submit" class="primary">Look up</button>
+    </form>
+    <div class="chips" aria-label="Popular stocks">
+      <span class="chips-label">Try</span>
+      <button type="button" data-symbol="INFY">INFY</button>
+      <button type="button" data-symbol="RELIANCE">RELIANCE</button>
+      <button type="button" data-symbol="TCS">TCS</button>
+      <button type="button" data-symbol="HDFCBANK">HDFCBANK</button>
+      <button type="button" data-symbol="ICICIBANK">ICICIBANK</button>
+      <button type="button" data-symbol="SBIN">SBIN</button>
+      <button type="button" data-symbol="ITC">ITC</button>
+    </div>
+
+    <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+
+    <section id="empty" class="card empty">
+      <h1>Indian market data from the services you already use</h1>
+      <p>Connect your accounts above, then search for a stock. Prices and charts come from
+        <strong>INDmoney</strong> or <strong>Kite</strong>; scores, fundamentals and news from <strong>Trendlyne</strong>.</p>
+      <p class="muted">Each service signs you in on its own page. This app keeps the sessions on your computer and only reads data.</p>
+    </section>
+
+    <article id="stock" hidden>
+      <header class="card quote">
+        <div class="quote-id">
+          <h1 id="q-name"></h1>
+          <p id="q-meta" class="muted"></p>
+        </div>
+        <div class="quote-price">
+          <p><span id="q-price" class="price"></span> <span id="q-change" class="change"></span></p>
+          <p id="q-updated" class="muted small"></p>
+        </div>
+      </header>
+
+      <section class="card chart-card" aria-label="Price chart">
+        <div class="toolbar">
+          <div class="segmented" id="source-switch" role="group" aria-label="Price data source"></div>
+          <div class="segmented" id="range-switch" role="group" aria-label="Chart range"></div>
+          <div class="segmented" id="type-switch" role="group" aria-label="Chart type">
+            <button type="button" data-type="candles" aria-pressed="true">Candles</button>
+            <button type="button" data-type="line" aria-pressed="false">Line</button>
+          </div>
+        </div>
+        <div id="chart" class="chart" aria-hidden="true"></div>
+        <div id="chart-msg" class="panel-msg" hidden></div>
+        <p id="period-summary" class="period-summary muted"></p>
+      </section>
+
+      <div class="grid two">
+        <section class="card" aria-labelledby="stats-title">
+          <h2 id="stats-title">Key stats <span id="stats-source" class="source-tag"></span></h2>
+          <dl id="stats" class="stats"></dl>
+          <div id="stats-msg" class="panel-msg" hidden></div>
+        </section>
+        <section class="card" aria-labelledby="analyst-title">
+          <h2 id="analyst-title">Analyst views</h2>
+          <div id="analysts"></div>
+        </section>
+      </div>
+
+      <section class="card" id="research" aria-labelledby="research-title">
+        <h2 id="research-title">Research <span class="source-tag">Trendlyne</span></h2>
+        <div id="research-body"></div>
+      </section>
+
+      <section class="card" aria-labelledby="news-title">
+        <h2 id="news-title">News &amp; filings <span class="source-tag">Trendlyne</span></h2>
+        <ul id="news" class="news"></ul>
+        <div id="news-msg" class="panel-msg" hidden></div>
+      </section>
+
+      <section class="card" aria-labelledby="table-title">
+        <div class="card-head">
+          <h2 id="table-title">Price history <span id="table-source" class="source-tag"></span></h2>
+          <a id="csv-link" class="button" href="#" download>Download CSV</a>
+        </div>
+        <div class="table-wrap">
+          <table id="history-table">
+            <thead><tr><th scope="col" id="time-col">Date</th><th scope="col">Open</th><th scope="col">High</th><th scope="col">Low</th><th scope="col">Close</th><th scope="col">Change</th><th scope="col">Volume</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <p id="table-note" class="muted small"></p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p>Data from INDmoney, Kite (Zerodha) and Trendlyne through their MCP servers. Prices may be delayed. For information only, not investment advice.</p>
+  </footer>
+
+  <script id="app-config" type="application/json">{{ config | tojson }}</script>
+</body>
+</html>

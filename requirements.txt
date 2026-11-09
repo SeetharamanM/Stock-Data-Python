@@ -1,0 +1,6 @@
+Flask>=3.1
+mcp>=2.3
+python-dotenv>=1.0
+# Installed with mcp; listed because the app imports them directly.
+anyio
+httpx2

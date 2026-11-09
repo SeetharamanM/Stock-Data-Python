@@ -1,0 +1,6 @@
+status: success
+data:
+  name | nse_code | bse_code | isin | entity_type | sector | industry
+  Infosys Ltd. | INFY | 500209 | INE009A01021 | stock | Software & Services | IT Consulting & Software
+  Mahaveer Infoway Ltd. | MINFY | 539383 | INE019D01016 | stock | Software & Services | IT Consulting & Software
+  InfoBeans Technologies Ltd. | INFOBEAN | 543644 | INE344S01016 | stock | Software & Services | IT Consulting & Software
