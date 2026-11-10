@@ -13,3 +13,6 @@ instance/
 # OS
 .DS_Store
 Thumbs.db
+
+# Streamlit secrets (contain your Trendlyne URL and app password)
+.streamlit/secrets.toml

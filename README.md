@@ -78,6 +78,47 @@ price source between INDmoney and Kite above the chart.
 Open the app at the address in `PUBLIC_BASE_URL` (default `http://localhost:8000`):
 logins redirect back to that address.
 
+## Streamlit version
+
+`streamlit_app.py` is the same app built with Streamlit, so it can be hosted on
+[Streamlit Community Cloud](https://streamlit.io/cloud). It uses the same data code
+(`stockapp/providers`) and shows the same quote, chart, CSV download, analyst views,
+Trendlyne research and news.
+
+Run it locally:
+
+```bash
+streamlit run streamlit_app.py
+```
+
+### Deploy on Streamlit Community Cloud
+
+1. Push this repository to GitHub (it already is, if you cloned it from there).
+2. Sign in at [share.streamlit.io](https://share.streamlit.io) with GitHub and click **Create app**.
+3. Choose this repository, the branch, and `streamlit_app.py` as the main file. Under
+   **Advanced settings** pick Python 3.12.
+4. In **Advanced settings > Secrets**, paste the contents of
+   `.streamlit/secrets.toml.example` and fill it in:
+   * `PUBLIC_BASE_URL`: the app's address, such as `https://your-app-name.streamlit.app`
+     (choose the name in the **App URL** field). INDmoney sends logins back to it.
+   * `APP_PASSWORD`: a long random password. Strongly recommended: anyone with the
+     link can open the app otherwise.
+   * `TRENDLYNE_MCP_URL`: optional, your personal Trendlyne URL.
+5. Click **Deploy**.
+
+How the hosted app keeps accounts apart:
+
+* **Each visitor logs in to their own accounts.** INDmoney and Kite logins are kept
+  in memory for that browser session only. They are never written to disk and are
+  closed after 2 hours without activity.
+* **Your Trendlyne URL is used only after the visitor enters `APP_PASSWORD`.** With no
+  password set, the secret is ignored and each visitor can paste their own Trendlyne
+  URL in the sidebar.
+* Login pages open in a new tab. After logging in, return to the app tab; it updates
+  by itself.
+* For extra safety, make the app private: in the app's **Settings > Sharing**, allow
+  only the email addresses you choose.
+
 ## Settings
 
 Put these in `.env` or set them as environment variables.
@@ -153,6 +194,8 @@ prices = pd.read_csv("http://localhost:8000/api/history/INFY?source=kite&range=5
 
 ```text
 app.py                    entry point: python app.py
+streamlit_app.py          Streamlit version: streamlit run streamlit_app.py
+.streamlit/               Streamlit settings and an example secrets file
 stockapp/__init__.py      Flask app: page, JSON API, OAuth callback, security headers
 stockapp/mcp_bridge.py    MCP sessions on a background event loop, OAuth handshake, saved logins
 stockapp/parsing.py       decoding tool results, including Trendlyne's compact text format

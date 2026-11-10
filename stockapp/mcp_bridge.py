@@ -168,6 +168,30 @@ class FileTokenStorage:
             self.path.unlink(missing_ok=True)
 
 
+class MemoryTokenStorage(FileTokenStorage):
+    """Like ``FileTokenStorage`` but keeps tokens in memory only (nothing on disk).
+
+    Used by the hosted Streamlit app, where each visitor's logins must stay in
+    their own session and vanish when it ends.
+    """
+
+    def __init__(self, redirect_uri: str):
+        super().__init__(Path(os.devnull), redirect_uri)
+        self._data: dict[str, Any] = {}
+
+    def _read(self) -> dict[str, Any]:
+        with self._lock:
+            return dict(self._data)
+
+    def _update(self, key: str, value: dict[str, Any]) -> None:
+        with self._lock:
+            self._data[key] = value
+
+    def clear(self) -> None:
+        with self._lock:
+            self._data.clear()
+
+
 class OAuthHandshake:
     """Hands the SDK's authorization URL to the web UI and waits for the redirect back."""
 
