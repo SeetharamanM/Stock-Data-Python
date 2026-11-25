@@ -4,3 +4,7 @@ python-dotenv>=1.0
 # Installed with mcp; listed because the app imports them directly.
 anyio
 httpx2
+# Streamlit version of the app (streamlit_app.py)
+streamlit>=1.45
+plotly>=5.20
+pandas>=2.0

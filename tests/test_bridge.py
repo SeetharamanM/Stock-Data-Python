@@ -148,3 +148,19 @@ def test_unreachable_server_reports_a_clear_error(tmp_path, loop_thread):
         provider.quote("INFY")
     assert "Could not reach 127.0.0.1" in raised.value.message
     assert provider.status()["state"] == "failed"
+
+
+def test_memory_token_storage_keeps_nothing_on_disk(tmp_path):
+    import asyncio
+
+    from mcp.shared.auth import OAuthToken
+
+    from stockapp.mcp_bridge import MemoryTokenStorage
+
+    storage = MemoryTokenStorage(redirect_uri="https://example.streamlit.app/")
+    assert not storage.has_tokens()
+    asyncio.run(storage.set_tokens(OAuthToken(access_token="abc", token_type="Bearer")))
+    assert storage.has_tokens()
+    assert asyncio.run(storage.get_tokens()).access_token == "abc"
+    storage.clear()
+    assert not storage.has_tokens()
